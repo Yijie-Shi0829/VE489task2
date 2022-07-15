@@ -78,7 +78,7 @@ def receiver():
     # here we choose a arbitrary port 10000
 
     # TODO: IP address
-    rec_socket.bind(("IP address", 10000))
+    rec_socket.bind(("10.3.81.2", 10000))
     rec_socket.listen(1)
     send_socket, send_addr = socket.accept()
 

@@ -74,7 +74,7 @@ class Sending(threading.Thread):
 
     def run(self):
         # TODO:
-        f = open('/home/yijie/Desktop/receive.txt', 'r')
+        f = open('/home/yijie/Desktop/VE489task2/shakespeare.txt', 'r')
         first_send = True
         eof = False
 
@@ -135,8 +135,8 @@ class Sending(threading.Thread):
 if __name__ == '__main__':
     send_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # TODO add rec IP address
-    rec_eth = ""
-    send_socket.connect(("", 10000))
+    rec_eth = "10.3.94.2"
+    send_socket.connect((rec_eth, 10000))
 
     sending_thread = Sending(send_socket)
     ack_thread = Ack(send_socket)
