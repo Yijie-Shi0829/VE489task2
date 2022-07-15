@@ -128,7 +128,7 @@ def receiver():
             break
 
     # write data received into a local file
-    filename = '/home/yijie/Desktop/receive.txt'
+    filename = '/home/receive.txt'
     with open(filename, 'w') as f:
         for data in receive_data:
             f.write(data)

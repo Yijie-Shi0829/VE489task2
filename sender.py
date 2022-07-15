@@ -74,7 +74,7 @@ class Sending(threading.Thread):
 
     def run(self):
         # TODO:
-        f = open('/home/yijie/Desktop/VE489task2/shakespeare.txt', 'r')
+        f = open('/home/VE489task2/shakespeare.txt', 'r')
         first_send = True
         eof = False
 
